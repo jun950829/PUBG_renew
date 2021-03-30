@@ -1,0 +1,1105 @@
+/* Reset */
+html {
+  overflow-y: scroll;
+  font-size: 13px;
+}
+
+body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, form, fieldset, p, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, input, button {
+  font-family: arial, Helvetica, AppleSDGothicNeo, sans-serif, Arita-dotum-Medium;
+  font-size: 16px;
+  color: #444;
+}
+
+body {
+  background-color: #fff;
+  *word-break: break-all;
+  -ms-word-break: break-all;
+}
+
+img, fieldset, iframe {
+  border: 0 none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input, select, button {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: middle;
+}
+
+i, em, address {
+  font-style: normal;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+hr {
+  display: none;
+}
+
+/* clearFix */
+.clearFix {
+  *zoom: 1;
+}
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999em;
+}
+
+.skip a {
+  position: absolute;
+  left: 0;
+  top: -9999em;
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  background-color: #039;
+  color: #eee;
+  font-size: "sans-serif";
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.skip a:hover,
+.skip a:active,
+.skip a:focus {
+  top: 0;
+}
+
+@font-face {
+  font-family: "sans-serif";
+  font-weight: normal;
+  font-style: normal;
+}
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background: #222;
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+}
+header h1 {
+  float: left;
+}
+header h1 a {
+  display: block;
+  width: 200px;
+  height: 110px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  header h1 a {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header h1 a {
+    height: 50px;
+    padding-top: 0px;
+  }
+}
+header h1 a img {
+  width: 100%;
+  height: 100%;
+}
+header .play {
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+header .play a {
+  display: block;
+  width: 100px;
+  height: 110px;
+  background: #f8aa20;
+  line-height: 110px;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 1050px) {
+  header .play a {
+    width: 60px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .play a {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+header .mhamBtn {
+  display: none;
+  float: right;
+  line-height: 50px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  header .mhamBtn {
+    display: block;
+  }
+}
+header .slideMenu {
+  display: none;
+  width: 40%;
+  height: 100%;
+  background: #aaa;
+  z-index: 1000;
+  margin-right: -100%;
+  text-align: center;
+}
+header .slideMenu ul li {
+  float: left;
+  margin: 2px 0;
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+header .slideMenu ul li .sub {
+  display: none;
+}
+header .slideMenu ul li .sub li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border: 0px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  header .slideMenu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+}
+header #nav {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  header #nav {
+    display: none;
+  }
+}
+header #nav li {
+  float: left;
+  margin: 0 15px;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  header #nav li {
+    float: left;
+    margin: 0 8px;
+  }
+}
+header #nav li span {
+  color: #f8aa20;
+}
+header #nav li a {
+  line-height: 110px;
+  font-size: 20px;
+  color: white;
+}
+header #nav li a:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 1050px) {
+  header #nav li a {
+    font-size: 14px;
+  }
+}
+header #nav li .sub {
+  display: none;
+  position: absolute;
+  top: 90px;
+  width: 170px;
+  height: auto;
+  background: #444;
+  border: 1px solid black;
+  z-index: 100;
+}
+header #nav li .sub li {
+  text-align: center;
+  float: none;
+  margin: 0;
+  height: 30px;
+  border-bottom: 1px solid white;
+}
+header #nav li .sub li a {
+  font-size: 15px;
+  line-height: 30px;
+}
+header .gnb {
+  float: right;
+}
+@media screen and (max-width: 767px) {
+  header .gnb {
+    display: none;
+  }
+}
+header .gnb li {
+  float: left;
+  margin: 0 0;
+  margin: 0 20px;
+  line-height: 110px;
+}
+@media screen and (max-width: 1050px) {
+  header .gnb li {
+    margin: 0 10px;
+  }
+}
+header .gnb li a {
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 1050px) {
+  header .gnb li a {
+    font-size: 14px;
+  }
+}
+header .gnb li a img {
+  vertical-align: middle;
+  width: 25px;
+  color: white;
+}
+
+#container {
+  position: relative;
+}
+#container h2 {
+  padding-top: 50px;
+  color: black;
+  text-align: center;
+  font-size: 55px;
+}
+@media screen and (max-width: 767px) {
+  #container h2 {
+    font-size: 35px;
+  }
+}
+#container #mainVideo {
+  position: relative;
+}
+#container #mainVideo video {
+  width: 100%;
+}
+#container #mainVideo .videoTitle {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  word-break: keep-all;
+  font-size: 55px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  #container #mainVideo .videoTitle {
+    font-size: 30px;
+  }
+}
+#container #mainVideo .videoButton {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container #mainVideo .videoButton a {
+  text-align: center;
+  display: block;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  background: #f8aa20;
+  color: #111;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  #container #mainVideo .videoButton a {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+}
+#container #notice {
+  margin-top: 100px;
+  background: url(../images/Goroka.png) no-repeat center center fixed;
+  background-size: cover;
+  background-position: 0 20%;
+  padding-bottom: 50px;
+}
+#container #notice .noticeWrap {
+  width: 90%;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #notice .noticeWrap {
+    width: 90%;
+  }
+}
+#container #notice .noticeWrap li {
+  width: 40%;
+  height: 35vw;
+  border: 3px solid #ccc;
+  background: white;
+  position: relative;
+  min-height: 500px;
+}
+@media screen and (max-width: 1000px) {
+  #container #notice .noticeWrap li {
+    min-height: 420px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap li {
+    width: 90%;
+    height: 100%;
+    min-height: 50px;
+    margin: 30px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #notice .noticeWrap li {
+    width: 100%;
+    height: 100%;
+  }
+}
+#container #notice .noticeWrap li div {
+  text-align: center;
+}
+#container #notice .noticeWrap li div img {
+  margin-top: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap li div img {
+    width: 100%;
+    margin: 0;
+  }
+}
+#container #notice .noticeWrap li div .subTitle {
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap li div .subTitle {
+    position: absolute;
+    padding: 0;
+    top: 10%;
+    left: 5%;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #notice .noticeWrap li div .subTitle {
+    font-size: 20px;
+    top: 10%;
+    left: 5%;
+    color: white;
+  }
+}
+#container #notice .noticeWrap li div .subContent {
+  height: 80px;
+  text-align: left;
+  padding: 15px;
+}
+@media screen and (max-width: 1000px) {
+  #container #notice .noticeWrap li div .subContent {
+    font-size: 14px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap li div .subContent {
+    display: none;
+  }
+}
+#container #notice .noticeWrap li div .subButton {
+  position: absolute;
+  bottom: 5px;
+  margin: 0 20%;
+  width: 60%;
+  border: 1px solid black;
+  height: 30px;
+  line-height: 30px;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .noticeWrap li div .subButton {
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 35%;
+    font-size: 12px;
+  }
+}
+#container #notice .noticeWrap li div .subButton a {
+  display: block;
+  background: #f8aa20;
+}
+#container #notice .patchNote {
+  width: 80%;
+  height: 21vw;
+  margin-top: 100px;
+  border: 3px solid #ccc;
+  background: white;
+  max-width: 1200px;
+  min-height: 260px;
+}
+#container #notice .patchNote .patchWrap {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .patchNote .patchWrap {
+    width: 100%;
+    height: 42vw;
+  }
+}
+#container #notice .patchNote .patchWrap .patchLeft {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .patchNote .patchWrap .patchLeft {
+    width: 100%;
+    height: 260px;
+  }
+}
+#container #notice .patchNote .patchWrap .patchLeft img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+}
+#container #notice .patchNote .patchWrap .patchLeft .subButton {
+  display: none;
+  margin: 0 20%;
+  width: 60%;
+  border: 1px solid black;
+  margin-top: 45px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .patchNote .patchWrap .patchLeft .subButton {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+  }
+}
+#container #notice .patchNote .patchWrap .patchLeft .subButton a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  background: #f8aa20;
+}
+#container #notice .patchNote .patchWrap .patchRight {
+  float: right;
+  width: 45%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #container #notice .patchNote .patchWrap .patchRight {
+    display: none;
+  }
+}
+#container #notice .patchNote .patchWrap .patchRight .subTitle {
+  font-size: 35px;
+  color: black;
+  padding: 10px 5px;
+}
+@media screen and (max-width: 1120px) {
+  #container #notice .patchNote .patchWrap .patchRight .subTitle {
+    font-size: 20px;
+  }
+}
+#container #notice .patchNote .patchWrap .patchRight .subContent {
+  font-size: 16px;
+  height: 80px;
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.5em;
+  word-break: keep-all;
+}
+@media screen and (max-width: 1350px) {
+  #container #notice .patchNote .patchWrap .patchRight .subContent {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #container #notice .patchNote .patchWrap .patchRight .subContent {
+    font-size: 12px;
+  }
+}
+#container #notice .patchNote .patchWrap .patchRight .subButton {
+  position: absolute;
+  margin: 0 20%;
+  width: 60%;
+  border: 1px solid black;
+  bottom: 5%;
+  right: 0;
+}
+#container #notice .patchNote .patchWrap .patchRight .subButton a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  background: #f8aa20;
+}
+@media screen and (max-width: 845px) {
+  #container #notice .patchNote .patchWrap .patchRight .subButton a {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+#container #esports {
+  width: 100%;
+}
+#container #esports .esportsWrap {
+  margin-top: 50px;
+}
+#container #esports .esportsWrap .esportsBanner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#container #esports .esportsWrap .esportsBanner ul {
+  width: 200%;
+}
+#container #esports .esportsWrap .esportsBanner ul li {
+  float: left;
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+#container #esports .esportsWrap .esportsBanner ul li div {
+  width: 100%;
+}
+#container #esports .esportsWrap .esportsBanner ul li div img {
+  width: 100%;
+}
+#container #esports .esportsWrap .esportsBanner ul li .esMore {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background: #f8aa20;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .esportsBanner ul li .esMore {
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #esports .esportsWrap .esportsBanner ul li .esMore {
+    height: 15px;
+    line-height: 15px;
+  }
+}
+#container #esports .esportsWrap .esportsBanner ul li p {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  word-break: keep-all;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .esportsBanner ul li p {
+    font-size: 24px;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #esports .esportsWrap .esportsBanner ul li p {
+    font-size: 18px;
+    top: 40%;
+  }
+}
+#container #esports .esportsWrap .esportsBanner .arrowBtn .LeftBtn {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+#container #esports .esportsWrap .esportsBanner .arrowBtn .RightBtn {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+#container #esports .esportsWrap .esportsBanner .arrowBtn a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: black;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .esportsBanner .arrowBtn a {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+#container #esports .esportsWrap .addWrap {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .addWrap {
+    display: block;
+  }
+}
+#container #esports .esportsWrap .addWrap h3 {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 35px;
+}
+#container #esports .esportsWrap .addWrap .esportLeft {
+  width: 50%;
+  background: black;
+  position: relative;
+}
+#container #esports .esportsWrap .addWrap .esportLeft iframe {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .addWrap .esportLeft {
+    width: 100%;
+  }
+}
+#container #esports .esportsWrap .addWrap .esportRight {
+  width: 50%;
+  background: black;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .addWrap .esportRight {
+    width: 100%;
+    max-height: 200px;
+  }
+}
+#container #esports .esportsWrap .addWrap .esportRight img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .addWrap .esportRight img {
+    max-height: 200px;
+  }
+}
+#container #esports .esportsWrap .addWrap .esportRight a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  background-color: #f8aa20;
+}
+@media screen and (max-width: 767px) {
+  #container #esports .esportsWrap .addWrap .esportRight a {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    bottom: 20px;
+  }
+}
+#container #maps {
+  padding-top: 20px;
+  width: 100%;
+  background: #444;
+  text-align: center;
+}
+#container #maps h2 {
+  color: white;
+}
+#container #maps h3 {
+  font-size: 35px;
+  color: #ccc;
+}
+@media screen and (max-width: 767px) {
+  #container #maps h3 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+}
+#container #maps .mapWrap {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #container #maps .mapWrap {
+    display: block;
+  }
+}
+#container #maps .mapWrap .mapLeft {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  #container #maps .mapWrap .mapLeft {
+    width: 100%;
+  }
+}
+#container #maps .mapWrap .mapLeft .minimap {
+  width: 70%;
+  margin: 5% 15%;
+}
+#container #maps .mapWrap .mapLeft .minimap img {
+  width: 100%;
+}
+#container #maps .mapWrap .mapRight {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  #container #maps .mapWrap .mapRight {
+    width: 100%;
+  }
+}
+#container #maps .mapWrap .mapRight .mapBtn {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#container #maps .mapWrap .mapRight .mapBtn li {
+  width: 27%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px #333;
+  background: white;
+}
+#container #maps .mapWrap .mapRight .mapBtn li a {
+  display: block;
+  line-height: 20px;
+}
+#container #maps .mapWrap .mapRight .mapBtn li.active {
+  background: #f8aa20;
+}
+#container #maps .mapWrap .mapRight .mapVisual {
+  width: 100%;
+}
+#container #maps .mapWrap .mapRight .mapVisual img {
+  margin: 10px 10%;
+  width: 80%;
+}
+#container #maps .mapWrap .mapRight .mapList {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#container #maps .mapWrap .mapRight .mapList li {
+  width: 30%;
+}
+#container #maps .mapWrap .mapRight .mapList li a {
+  display: block;
+  width: 100%;
+}
+#container #maps .mapWrap .mapRight .mapList li a img {
+  width: 100%;
+}
+#container #weapons {
+  padding-top: 30px;
+  background: #444;
+}
+#container #weapons h2 {
+  color: white;
+}
+#container #weapons .weaponsWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  #container #weapons .weaponsWrap {
+    display: block;
+  }
+}
+#container #weapons .weaponsWrap .weaponsLeft {
+  width: 40%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  #container #weapons .weaponsWrap .weaponsLeft {
+    width: 100%;
+    height: 300px;
+  }
+}
+#container #weapons .weaponsWrap .weaponsLeft .weaponsMenu {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  line-height: 25px;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weaponsMenu li {
+  width: 30%;
+  background: white;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weaponsMenu li.active {
+  background: #f8aa20;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .weaponList {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  line-height: 40px;
+  text-align: center;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .weaponList li {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  font-size: 12px;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .weaponList li.active {
+  background: #f8aa20;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats {
+  width: 100%;
+  height: 500px;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li {
+  width: 80%;
+  height: 40px;
+  margin: 0 10%;
+  text-align: center;
+  line-height: 40px;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li div {
+  float: left;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li div:first-child {
+  width: 30%;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li div:last-child {
+  width: 70%;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li span:first-child {
+  width: 20%;
+  color: white;
+  margin-right: 40px;
+}
+#container #weapons .weaponsWrap .weaponsLeft .weapons .stats .statsList li span:last-child {
+  width: 70%;
+}
+#container #weapons .weaponsWrap .weaponsRight {
+  width: 50%;
+  margin: 40px auto;
+}
+@media screen and (max-width: 767px) {
+  #container #weapons .weaponsWrap .weaponsRight {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+#container #weapons .weaponsWrap .weaponsRight .weaponsImg {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: white;
+  border: 5px solid #f8aa20;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  #container #weapons .weaponsWrap .weaponsRight .weaponsImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+#container #weapons .weaponsWrap .weaponsRight .weaponsImg img {
+  width: 100%;
+  margin: 100px auto;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background: black;
+  min-width: 363px;
+}
+footer hr {
+  display: block;
+  color: white;
+}
+footer .footerTop {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+footer .footerTop li {
+  float: left;
+  margin: 0 20px;
+}
+@media screen and (max-width: 767px) {
+  footer .footerTop li {
+    float: left;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footerTop li {
+    float: left;
+    margin: 0 5px;
+  }
+}
+footer .footerTop li a {
+  color: white;
+  font-size: 15px;
+  line-height: 15px;
+}
+@media screen and (max-width: 480px) {
+  footer .footerTop li a {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+footer .footerBottom {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .footerBottom address p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+@media screen and (max-width: 480px) {
+  footer .footerBottom address p {
+    margin: 5px 0;
+    font-size: 10px;
+  }
+}
+footer .footerBottom .footerList li {
+  float: left;
+  margin: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  footer .footerBottom .footerList li {
+    float: left;
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footerBottom .footerList li {
+    margin-top: 5px;
+  }
+}
+footer .footerBottom .footerList li::after {
+  content: "|";
+  float: right;
+  display: block;
+  margin-left: 30px;
+}
+@media screen and (max-width: 767px) {
+  footer .footerBottom .footerList li::after {
+    margin-left: 10px;
+  }
+}
+footer .footerBottom .footerList li:last-child::after {
+  display: none;
+}
+footer .footerBottom .footerList li a {
+  font-size: 12px;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  footer .footerBottom .footerList li a {
+    font-size: 10px;
+  }
+}
